@@ -13,6 +13,9 @@ def save_animation(filename, particles, num_iter, step):
     ax.set_xlim((-1, 1))
     ax.set_ylim((-10, 5))
 
+    ax.set_xlabel('x, м')
+    ax.set_ylabel('y, м')
+
     lines = [ax.plot([], [], color='r', linestyle='', marker='o')[0] for _ in particles]
 
     # инициализация линий для анимации
