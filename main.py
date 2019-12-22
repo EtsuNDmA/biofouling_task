@@ -34,7 +34,8 @@ class Particle:
         d = r * 2
 
         # плотность частицы
-        k = self.r_0 * (((RO_F - self.ro_0) / (RO_F - RO_W)) ** (1 / 3) - 1)
+        # k = self.r_0 * (((RO_F - self.ro_0) / (RO_F - RO_W)) ** (1 / 3) - 1)
+        k = 1.01
         kk = (self.r_0 ** 3) / ((self.r_0 + k) ** 3)
         ro_sphere = self.ro_0 * kk + RO_F * (1 - kk)
         # безразмерный диаметр частицы
