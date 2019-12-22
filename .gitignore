@@ -133,3 +133,8 @@ dmypy.json
 
 # MS office
 .~lock.*
+
+# Artefacts
+result
+
+.DS_Store
